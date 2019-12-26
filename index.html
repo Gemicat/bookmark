@@ -33,7 +33,7 @@
             contents += `<li>${mark.title}</li>`
             contents += `${startTag}${handleMarks(mark.children)}${endTag}`
           } else {
-            contents += `<li><a href="${mark.url}">${mark.title}</a></li>`
+            contents += `<li><a target="_blank" href="${mark.url}">${mark.title}</a></li>`
           }
         })
         return contents
